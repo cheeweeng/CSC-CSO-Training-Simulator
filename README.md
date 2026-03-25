@@ -7,7 +7,7 @@ An advanced, AI-driven training platform designed for Customer Service Officers 
 ### For CSOs (Independent Practice)
 - **AI-Generated Scenarios:** Practice with diverse, realistic customer inquiries generated on-the-fly by AI.
 - **Internal Policy Context:** Every scenario includes relevant internal policy snippets to ensure practice remains grounded in organizational rules.
-- **Real-time Evaluation:** Receive immediate, detailed feedback across five core competencies:
+- **Real-time Evaluation:** Receive immediate, [detailed feedback across five core competencies](https://github.com/user-attachments/assets/b1790498-6932-46f5-a5a5-c9500b7cfc8b):
   - Policy Translation
   - Empathy
   - WOG (Whole-of-Government) Perspective

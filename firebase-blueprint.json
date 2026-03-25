@@ -1,0 +1,72 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile for CSOs and CX Team members.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Firebase Auth UID" },
+        "email": { "type": "string", "format": "email" },
+        "role": { "type": "string", "enum": ["cso", "admin"] },
+        "displayName": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "Scenario": {
+      "title": "Scenario",
+      "description": "A customer enquiry scenario for training.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "difficulty": { "type": "integer", "description": "1 to 4" },
+        "category": { "type": "string" },
+        "content": { "type": "string", "description": "The email body from the customer" },
+        "policyContext": { "type": "string", "description": "Internal policy context to help the CSO" }
+      },
+      "required": ["id", "title", "content"]
+    },
+    "Session": {
+      "title": "Session",
+      "description": "A practice session result.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "scenarioId": { "type": "string" },
+        "response": { "type": "string" },
+        "evaluation": { "type": "object" },
+        "scores": {
+          "type": "object",
+          "properties": {
+            "policyTranslation": { "type": "number" },
+            "empathy": { "type": "number" },
+            "wogPerspective": { "type": "number" },
+            "integrity": { "type": "number" },
+            "problemOwnership": { "type": "number" },
+            "overall": { "type": "number" }
+          }
+        },
+        "status": { "type": "string", "enum": ["pending", "completed"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "scenarioId", "status"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles"
+    },
+    "/scenarios/{scenarioId}": {
+      "schema": "Scenario",
+      "description": "Training scenarios"
+    },
+    "/sessions/{sessionId}": {
+      "schema": "Session",
+      "description": "Practice sessions and results"
+    }
+  }
+}

@@ -1,6 +1,6 @@
-# AI-Powered CX Training Simulator
+# AI-Powered CSO Training Simulator
 
-An advanced, AI-driven training platform designed for Customer Service Officers (CSOs) to practice handling complex customer inquiries within a safe, simulated environment. The platform leverages the Gemini AI model to generate realistic scenarios and provide instant, competency-based feedback.
+An advanced, AI-driven training platform designed for Customer Service Officers (CSOs) to practice handling complex customer inquiries within a safe, simulated environment. The platform leverages the Gemini AI model to generate realistic scenarios and provide instant, bias-free, competency-based feedback.
 
 ## 🚀 Key Features
 
@@ -14,12 +14,14 @@ An advanced, AI-driven training platform designed for Customer Service Officers 
   - Integrity
   - Problem Ownership
 - **Progress Tracking:** Personal dashboard to monitor practice history and score trends over time.
+<img width="700" height="500" alt="scenarios dashboard" src="https://github.com/user-attachments/assets/d6fa5d65-779f-48e6-9b92-c9725f7244c3" />
 
 ### For CX Managers (Team Dashboard)
 - **Organization-wide Analytics:** Aggregate data on total sessions, average scores, and completion rates.
 - **Competency Gap Analysis:** Visual bar charts identifying which core competencies the team needs more training in.
 - **Individual CSO Metrics:** Detailed performance table tracking sessions, completion rates, and average scores for every team member.
 - **Scenario Management:** Ability to regenerate training scenarios to keep content fresh and relevant.
+<img width="700" height="500" alt="CX dashboard" src="https://github.com/user-attachments/assets/bff78aad-d2eb-4e82-bc6e-6703c4e8544c" />
 
 ## 🛠 Tech Stack
 

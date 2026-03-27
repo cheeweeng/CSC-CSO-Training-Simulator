@@ -45,8 +45,8 @@ An advanced, AI-driven training platform designed for Customer Service Officers 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/cx-training-simulator.git
-   cd cx-training-simulator
+   git clone https://github.com/your-username/csc-cso-training-simulator.git
+   cd csc-cso-training-simulator
    ```
 
 2. **Install dependencies:**
